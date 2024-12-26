@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1037953083207",
+    "project_id": "berberrezervasyon-f5b13",
+    "storage_bucket": "berberrezervasyon-f5b13.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037953083207:android:5e48cd0ed10d5fe28bce62",
+        "android_client_info": {
+          "package_name": "com.example.berberrezervasyon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDORewrBPLPU4Sh8iOeiFoY8HFvCTHGiJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
