@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">BerberRezervasyon</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="client_id">1037953083207-i2pi9s2ce4lu7gk84tdbr051esg8r4ol.apps.googleusercontent.com</string>
+    <string name="default_web_client_id">1037953083207-i2pi9s2ce4lu7gk84tdbr051esg8r4ol.apps.googleusercontent.com</string>
+    <string name="title_activity_locations">Locations</string>
+    <string name="go_to_admin_screen">Yönetici Girişi</string>
+    <string name="go_to_user_screen">Kullanıcı Girişi</string>
+
 </resources>

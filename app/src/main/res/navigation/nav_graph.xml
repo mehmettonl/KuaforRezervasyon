@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginScreen">
+    app:startDestination="@id/wayScreen">
+
     <fragment
         android:id="@+id/loginScreen"
         android:name="com.example.berberrezervasyon.LoginScreen"
@@ -19,8 +20,13 @@
             app:popExitAnim="@anim/animation4"/>
         <action
             android:id="@+id/action_loginScreen_to_homePage"
-            app:destination="@id/homePage" />
+            app:destination="@id/homePage"
+            app:enterAnim="@anim/animation1"
+            app:exitAnim="@anim/animation2"
+            app:popEnterAnim="@anim/animation3"
+            app:popExitAnim="@anim/animation4"/>
     </fragment>
+
     <fragment
         android:id="@+id/registerScreen"
         android:name="com.example.berberrezervasyon.RegisterScreen"
@@ -34,17 +40,37 @@
             app:popEnterAnim="@anim/animation3"
             app:popExitAnim="@anim/animation4"/>
     </fragment>
+
     <fragment
         android:id="@+id/homePage"
         android:name="com.example.berberrezervasyon.HomePage"
         android:label="fragment_home_page"
         tools:layout="@layout/fragment_home_page" >
-        <action
-            android:id="@+id/action_homePage_to_registerScreen"
-            app:destination="@id/registerScreen"
-            app:enterAnim="@anim/animation1"
-            app:exitAnim="@anim/animation2"
-            app:popEnterAnim="@anim/animation3"
-            app:popExitAnim="@anim/animation4"/>
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="" />
     </fragment>
+    <fragment
+        android:id="@+id/wayScreen"
+        android:name="com.example.berberrezervasyon.WayScreen"
+        android:label="fragment_way_screen"
+        tools:layout="@layout/fragment_way_screen" >
+        <action
+            android:id="@+id/action_wayScreen_to_adminLoginScreen3"
+            app:destination="@id/adminLoginScreen3" />
+        <action
+            android:id="@+id/action_wayScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminLoginScreen3"
+        android:name="com.example.berberrezervasyon.AdminLoginScreen"
+        android:label="fragment_admin_login_screen"
+        tools:layout="@layout/fragment_admin_login_screen" />
+
 </navigation>
